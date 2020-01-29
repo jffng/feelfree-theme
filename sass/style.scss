@@ -1,0 +1,44 @@
+@import 'variables';
+@import 'normalize';
+@import 'standardize';
+@import 'typography';
+@import 'utilities';
+
+body {
+	background-color: $background-color;
+	color: $primary-color;
+	font-family: 'Overpass';
+	font-weight: lighter;
+	font-size: 18px;
+	overflow-x: hidden;
+	width: 100vw;
+}
+
+.site-content {
+	padding: $site-padding-sm;
+}
+
+.post-title >h1 {
+	margin-bottom: 0;
+}
+
+.entry-content > .alignwide,
+.site-header > .alignwide
+.site-footer > .alignwide {
+	max-width: $site-content-width-wide;
+}
+
+@media screen and (min-width: $breakpoint-sm) {
+	.entry-content > *,
+	.site-header > *,
+	.site-footer > *,
+	.site-content > h1 {
+		padding-left: 0px;
+		padding-right: 0px;
+		margin-left: $content-padding;
+		max-width: $site-content-width;
+	}
+	.site-content {
+		padding: 0 $site-padding-lg;
+	}
+}

@@ -1,0 +1,121 @@
+@import 'variables';
+
+.is-style-media-text-hero {
+	&.wp-block-media-text {
+		grid-template-columns: 40% 1fr;
+		width: 110vw;
+	}
+	&.is-stacked-on-mobile {
+		&.has-media-on-the-right {
+			.wp-block-media-text__media {
+				min-height: 872px;
+				padding-top: 4rem;
+				position: relative;
+				&:before {
+					bottom: -3vh;
+					content: url('../assets/hero-blobs.svg');
+					height: 110vh;
+					left: -22vh;
+					position: absolute;
+					width: auto;
+					z-index: -1;
+				}
+				> img {
+					height: 110vh;
+					mask-mode: alpha;
+					-webkit-mask-mode: alpha;
+					mask-repeat: no-repeat;
+					-webkit-mask-repeat: no-repeat;
+					mask-size: contain;
+					-webkit-mask-size: contain;
+					// mask-position: 10% 0;
+					// -webkit-mask-position: 10% 0;
+					mask-image: url('../assets/cover-hero-mask.svg');
+					-webkit-mask-image: url('../assets/cover-hero-mask.svg');
+					position: absolute;
+					width: auto;
+				}
+				@media (max-width: 600px){
+					grid-row: 1;
+				}
+			}
+			.wp-block-media-text__content {
+				padding: 0;
+				z-index: 1;
+				>h1 {
+					color: $primary-color;
+					font-family: 'Nova Cut';
+					font-size: 110px;
+					font-weight: normal;
+					margin: 0;
+					width: 70vw;
+				}	
+				>p {
+					font-size: 40px;
+					font-weight: lighter;
+					margin-top: 0;
+					width: 70%;
+				}
+				@media (max-width: 600px){
+					grid-row: 2;
+				}
+			}
+		}
+	}
+}
+
+.is-style-separator-blobs {
+	height: 75vh;
+	max-width: unset !important;
+	// width: 80vw;
+	margin: 4rem auto 0;
+	border-bottom: none;
+	&:after {
+		background-image: url(../assets/separator.svg);
+		background-position: left;
+		background-repeat: no-repeat;
+		background-size: contain;
+		content: " ";
+		display: inline-block;
+		height: 100%;
+		margin: 0 auto;
+		position: relative;
+		width: 100%;
+	}	
+}
+
+.is-style-quote-blobs {
+	position: relative;
+	&.wp-block-quote {
+		border-left: none;
+		> * {
+			margin-left: 0
+		}		
+	}
+
+	> p {
+		font-family: 'Nova Cut';
+		font-size: 2.222rem;
+	}
+
+	&:after {
+		background-image: url(../assets/quote-blobs.svg);
+		background-size: contain;
+		background-repeat: no-repeat;
+		content: " ";
+		height: 100%;
+		position: absolute;
+		right: -20%;
+		top: 0;
+		width: 50%;
+		z-index: -1;
+	}
+}
+
+.is-style-latest-posts-stacked {
+	> li > a{
+		color: $primary-color;
+		font-family: 'Overpass';
+		font-size: 2rem;
+	}
+}
