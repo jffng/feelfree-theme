@@ -82,6 +82,6 @@ if ( function_exists( 'register_block_style' ) ) {
  */
 function feelfree_scripts() {
 	wp_enqueue_style( 'feelfree-styles', get_template_directory_uri() . '/css/style.css' );
-	/* wp_enqueue_style( 'feelfree-fonts', nwaneri_fonts_url() ); */
+	/* wp_enqueue_script( 'feelfree-scripts', get_template_directory_uri() . '/assets/scripts/demo3.js', [], false, true); */
 }
 add_action( 'wp_enqueue_scripts', 'feelfree_scripts' );

@@ -1,0 +1,31 @@
+.wp-block-latest-posts .wp-block-image {
+  margin: 1rem 0;
+}
+
+.wp-block-latest-posts.is-grid li {
+  margin: 0 2rem 2rem 0;
+}
+
+@media screen and (min-width: 600px) {
+  .wp-block-latest-posts.columns-3 li {
+    width: calc(33.33333% - 2rem);
+  }
+}
+
+.entry-content .wp-block-latest-posts li {
+  margin-bottom: 10rem;
+}
+
+@media screen and (min-width: 608px) {
+  .entry-content .wp-block-latest-posts {
+    max-width: 30vw;
+  }
+  .entry-content .wp-block-latest-posts li:nth-child(odd) {
+    transform: translateX(60vw);
+  }
+  .entry-content .wp-block-latest-posts li {
+    margin-bottom: -4rem;
+  }
+}
+
+/*# sourceMappingURL=block-styles.css.map */

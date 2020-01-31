@@ -1,0 +1,13 @@
+.site-header {
+	display: flex;
+	justify-content: space-between;
+	img.logo {
+		max-width: 220px;
+	}
+	.wp-block-image {
+		margin: 0;
+	}
+	nav {
+		margin-right: $site-padding-lg;
+	}
+}

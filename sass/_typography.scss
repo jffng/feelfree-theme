@@ -1,41 +1,12 @@
 @font-face {
-	font-family: 'Overpass';
-	src: url('../assets/fonts/Overpass/Overpass-Regular.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'Overpass';
-	src: url('../assets/fonts/Overpass/Overpass-Italic.ttf') format('truetype');
-	font-weight: normal;
-	font-style: italic;
-}
-
-@font-face {
-	font-family: 'Overpass';
-	src: url('../assets/fonts/Overpass/Overpass-Bold.ttf') format('truetype');
-	font-weight: bold;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'Overpass';
-	src: url('../assets/fonts/Overpass/Overpass-Light.ttf') format('truetype');
-	font-weight: lighter;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'Nova Cut';
-	src: url('../assets/fonts/Nova_Cut/NovaCut-Regular.ttf') format('truetype');
+	font-family: 'Violet Sans';
+	src: url('../assets/fonts/VioletSans-Regular.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
 
 h2,h3,h4 {
 	color: #fff;
-	font-family: 'Nova Cut';
 	font-weight: normal;
 }
 
@@ -50,9 +21,9 @@ h1 {
 }
 
 button, a {
-	font-family: 'Nova Cut';
+	color: $primary-color;
+	font-family: 'Violet Sans';
 	text-decoration: none;
-	text-transform: uppercase;
 	letter-spacing: 2px;
 }
 
